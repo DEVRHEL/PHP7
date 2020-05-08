@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Giao diện hiển thị danh sách nhân sự </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+ 	<link rel="stylesheet" href="1.css">
+</head>
+<body >
+ 	<div class="container">
+ 		<div class="text-xs-center">
+ 			<h3 class="display-3">Danh sách nhân sự</h3>
+ 		</div>
+ 	</div>
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="card-columns">
+ 				<div class="card">
+ 					<img class="card-img-top img-fluid" src="http://placehold.it/200x200" alt="Card image cap">
+ 						<div class="card-block">
+ 							<h4 class="card-title ten">
+ 								Nguyen Van A
+ 							</h4>
+ 							<p class="card-text tuoi">Tuoi: 20</p>
+ 							<p class="card-text sdt">Tel: 0904534848</p>
+ 							<p class="card-text sodonhang">So don hoan thanh: 10</p>
+ 							<p class="card-text linkfb"><small><a href="#linkfb" class="btn btn-info">Facebook <i class="fa fa-chevron-right"></i></a></small></p>
+ 							<!-- <p class="card-text"><small class="text-muted">Last updated 3 min ago</small></p> -->
+
+ 						</div>
+ 				</div>
+
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="container">  
+			  <form id="contact" action="" method="post">
+			    <h3>Them moi nhan su</h3>
+			    <h4>Form nhap du lieu nhan vien</h4>
+			    <fieldset>
+			      <input placeholder="Ten nhan vien" type="text" name="ten" id="ten" tabindex="1" required autofocus>
+			    </fieldset>
+			    <fieldset>
+			      <input placeholder="Tuoi" name="tuoi" id="tuoi" type="number" tabindex="2" required>
+			    </fieldset>
+			    <fieldset>
+			      <input placeholder="Phone Number" name="dt" id="dt" type="text" tabindex="3" required>
+			    </fieldset>
+			    <fieldset>
+			      <input placeholder="So don hang" name="sodonhang" id="sodonhang" type="number" tabindex="4" required>
+			    </fieldset>
+			    <fieldset>
+			    	<label for="anh" class="col-sm-4 form-control-label">Anh dai dien</label>
+			    	<div class="col-sm-10">
+			    		<input type="file" name="anhavatar" placeholder="Upload avatar" id="anhavatar">
+			    	</div>
+			    </fieldset>
+			    <fieldset>
+			      <button type="submit" class="btn btn-outline-success">Them moi</button>
+			      <button type="reset" class="btn btn-outline-danger">Nhap lai</button>
+			    </fieldset>
+			  </form>
+			</div>
+ 		</div>
+ 	</div>
+</body>
+</html>

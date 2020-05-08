@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"  >
+	<head>
+	<title> Document  </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/angular-material.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+ 	<link rel="stylesheet" href="1.css">
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+
+	<div class="jumbotron text-xs-center">
+		<h1 class="display-3">Demo Angular Su dung hieu ung list view va grid view</h1>
+		<p class="lead">Ung dung cua ng-model de lam hieu ung jquery</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="float-xs-right">
+				<select name="" id="" class="form-control" ng-model="hienthi">
+					<option value="cot">Hien thi theo cot</option>
+					<option value="luoi">Hien thi theo luoi</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="container {{hienthi}}">
+		<div class="row">
+			<div class="mottin">
+				<div class="vien">
+					<img src="images/1.png" alt="" class="float-xs-left pr-2" width="200px">
+					<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+					<small>10/7/2019 - 08:10</small>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusantium, necessitatibus voluptatum in expedita quisquam totam repellendus voluptate quam eveniet fugiat deserunt non vel ipsum ab delectus, blanditiis culpa corporis!</p>
+				</div>
+			</div>
+			<div class="mottin">
+				<div class="vien">
+					<img src="images/1.png" alt="" class="float-xs-left pr-2" width="200px">
+					<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+					<small>10/7/2019 - 08:10</small>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusantium, necessitatibus voluptatum in expedita quisquam totam repellendus voluptate quam eveniet fugiat deserunt non vel ipsum ab delectus, blanditiis culpa corporis!</p>
+				</div>
+			</div>
+			<div class="mottin">
+				<div class="vien">
+					<img src="images/1.png" alt="" class="float-xs-left pr-2" width="200px">
+					<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+					<small>10/7/2019 - 08:10</small>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusantium, necessitatibus voluptatum in expedita quisquam totam repellendus voluptate quam eveniet fugiat deserunt non vel ipsum ab delectus, blanditiis culpa corporis!</p>
+				</div>
+			</div>
+			<div class="mottin">
+				<div class="vien">
+					<img src="images/1.png" alt="" class="float-xs-left pr-2" width="200px">
+					<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+					<small>10/7/2019 - 08:10</small>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusantium, necessitatibus voluptatum in expedita quisquam totam repellendus voluptate quam eveniet fugiat deserunt non vel ipsum ab delectus, blanditiis culpa corporis!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>  
+	<script type="text/javascript" src="vendor/angular-1.5.min.js"></script>  
+  	<script type="text/javascript" src="vendor/angular-animate.min.js"></script>
+  	<script type="text/javascript" src="vendor/angular-aria.min.js"></script>
+ 	<script type="text/javascript" src="vendor/angular-messages.min.js"></script>
+ 	<script type="text/javascript" src="vendor/angular-material.min.js"></script>  
+  	<script type="text/javascript" src="1.js"></script>
+</body>
+</html>

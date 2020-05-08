@@ -1,0 +1,22 @@
+*{margin: 0; padding: 0;}  
+
+div.xanh
+{
+	background: lightblue;
+}
+div.do
+{
+	background: brown;
+	color: white;
+}
+.mottin {
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+.luoi .mottin
+{
+	width: 31%;
+	margin-right: 2%;
+	float: left;
+	height: 300px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"  >
+	<head>
+	<title> Document  </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/angular-material.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+ 	<link rel="stylesheet" href="1.css">
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+
+	 <div class="jumbotron">
+	 	<h1 class="display-3">Vi du ve load ng-model</h1>
+
+	 </div>
+	<div class="container">
+		<div class="row">
+			<input type="text" class="form-control" ng-model="Tenvidu">
+		</div>
+		<div class="row">
+			<h3 class="display-3">
+				<!-- {{Tenvidu}} -->
+			</h3>
+		</div>
+		<a href="http://{{Tenvidu}}">Click link</a>
+	</div>
+	
+	<div class="jumbotron {{mau}}">
+		<h1 class="display-3">Lua chon mau</h1>
+		<!-- <select name="" id="" class="form-control" ng-model="mau">
+		<option value="xanh">Mau xanh</option>
+		<option value="do">Mau do</option> -->
+		<label ><input type="radio" name="mausac" ng-model="mau" value="xanh">Mau xanh</label> <br>
+		<label ><input type="radio"name="mausac" ng-model="mau" value="do">Mau do</label>
+
+	</select>
+	</div>
+	<h2 class="display-3 text-xs-center">
+		Lua chon cua ban: {{mau}}
+	</h2>
+
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>  
+	<script type="text/javascript" src="vendor/angular-1.5.min.js"></script>  
+  	<script type="text/javascript" src="vendor/angular-animate.min.js"></script>
+  	<script type="text/javascript" src="vendor/angular-aria.min.js"></script>
+ 	<script type="text/javascript" src="vendor/angular-messages.min.js"></script>
+ 	<script type="text/javascript" src="vendor/angular-material.min.js"></script>  
+  	<script type="text/javascript" src="1.js"></script>
+</body>
+</html>

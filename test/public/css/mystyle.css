@@ -1,0 +1,4 @@
+#wrapper {width: 980px; height: auto; margin: 0px auto}
+#header {width: auto; height: 300px; background: red}
+#content {width: auto; height: 300px; background: yellow}
+#footer {width: auto; height: 300px; background: green}

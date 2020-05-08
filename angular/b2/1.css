@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0;}  
+
+div.xanh
+{
+	background: lightblue;
+}
+div.do
+{
+	background: brown;
+	color: white;
+}
