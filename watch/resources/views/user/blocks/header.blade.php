@@ -25,6 +25,11 @@
                                 @endforeach
 
                                 <li><a href="{!! route('getContact') !!}">Contact</a></li>
+                                @if(Auth::check())
+                                    <li><a href="{!! URL('userLogout') !!}">{!! Auth::user()->username !!} (Logout)</a></li>
+                                @else
+                                <li><a href="{!! URL('/auth/facebook') !!}">Login</a></li>
+                                @endif
                             </ul>
                         </nav>
                         <div class="header_extra ml-auto">

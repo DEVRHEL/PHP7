@@ -7,6 +7,7 @@ use Darryldecode\Cart\Cart;
 use Illuminate\Http\Request;
 use DB,Mail;
 //use Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class HomeController extends Controller
@@ -66,8 +67,15 @@ class HomeController extends Controller
     }
     public function getCart()
     {
-        $content = \Cart::getContent();
-        return view('user.pages.cart',compact('content'));
+        if(Auth::check())
+        {
+            $content = \Cart::getContent();
+            return view('user.pages.cart',compact('content'));
+        }
+        else
+        {
+            return redirect()->route('authfb');
+        }
     }
     public function deleteCart($id)
     {
@@ -88,5 +96,14 @@ class HomeController extends Controller
     {
         \Cart::clear();
         return redirect()->route('getCart');
+    }
+    public function postCheckout(Request $request)
+    {
+        $data=['user'=>$request->user,'email'=>$request->email,'phonenumber'=>$request->phonenumber,'cartval'=>$request->cartval];
+        Mail::send('user.pages.blankcheckout',$data,function ($msg){
+            $msg->from('ruthietrumbauer77@gmail.com','Customer');
+            $msg->to('ruthietrumbauer77@gmail.com','Admin')->subject('Customer Order');
+        });
+        return redirect()->route('getContact')->with(['flash_message'=>'Thank you ^^ Order successfully']);
     }
 }

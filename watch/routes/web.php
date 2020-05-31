@@ -54,3 +54,9 @@ Route::get('cart',['as'=>'getCart','uses'=>'HomeController@getCart']);
 Route::get('deletecart/{id}',['as'=>'deleteCart','uses'=>'HomeController@deleteCart']);
 Route::post('updatecart/{id}/{qty}',['as'=>'updateCart','uses'=>'HomeController@updateCart']);
 Route::get('clearcart',['as'=>'clearCart','uses'=>'HomeController@clearCart']);
+Route::get('/auth/facebook', 'SocialAuthController@redirectToProvider')->name('authfb');
+Route::get('/auth/facebook/callback', 'SocialAuthController@handleProviderCallback');
+Route::get('userLogout', 'SocialAuthController@getLogout');
+Route::post('checkout',['as'=>'checkout','uses'=>'HomeController@postCheckout']);
+
+
