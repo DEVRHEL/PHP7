@@ -12,6 +12,7 @@
                     <th>ID</th>
                     <th>Username</th>
                     <th>Level</th>
+                    <th>2FA Status</th>
                     <th>Delete</th>
                     <th>Edit</th>
                 </tr>
@@ -24,6 +25,7 @@
                         <td>
                             {!! $value['id']==2?"Superadmin":($value['level']==1?"Admin":"Member") !!}
                         </td>
+                        <td>{!! is_null($value['secret_code'])?"Disabled":"Enabled" !!}</td>
                         <td class="center"><i class="fa fa-trash"><a onclick="return confirmdel('Are you sure?')" href="{!! route('admin.user.getDelete',$value['id']) !!}">Delete</a></i></td>
                         <td class="center"><i class="fa fa-pencil"><a href="{!! route('admin.user.getEdit',$value['id']) !!}">Edit</a></i></td>
                     </tr>

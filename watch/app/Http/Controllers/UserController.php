@@ -42,7 +42,7 @@ class UserController extends Controller
     }
     public function getList()
     {
-        $user=User::select('id','username','level')->orderBy('id','DESC')->get()->toArray();
+        $user=User::select('id','username','level','secret_code')->orderBy('id','DESC')->get()->toArray();
         return view('admin.user.list',compact('user'));
     }
     public function getDelete($id)

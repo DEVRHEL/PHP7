@@ -38,6 +38,11 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function (){
         Route::get('edit/{id}',['as'=>'admin.user.getEdit','uses'=>'UserController@getEdit']);
         Route::post('edit/{id}',['as'=>'admin.user.postEdit','uses'=>'UserController@postEdit']);
     });
+    Route::group(['prefix'=>'2fa'], function() {
+        Route::get('add', ['as' => 'admin.2fa.getAdd', 'uses' => 'TwoFaceAuthsController@getAdd']);
+        Route::post('add', ['as' => 'admin.2fa.postAdd', 'uses' => 'TwoFaceAuthsController@postAdd']);
+        Route::get('disableFA/{id}', ['as' => 'admin.2fa.getDisableFA', 'uses' => 'TwoFaceAuthsController@disableFA']);
+    });
 });
 Route::group(['prefix'=>'auth'], function (){
     Route::get('login',['as'=>'auth.getLogin','uses'=>'AuthController@getLogin']);

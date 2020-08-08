@@ -24,11 +24,33 @@ class AuthController extends Controller
           'username'=>$request->txtUsername,
           'password'=>$request->txtPassword,
         ];
-        if(Auth::attempt($login)) {
-            return redirect()->route('admin.user.getList');
-        }
-        else {
-            return redirect()->back();
+        if(Auth::attempt($login)){
+            $secretCode = auth()->user()->secret_code;
+            if(isset($secretCode) && !empty($secretCode)){
+
+                $this->validate($request, [
+                    "code" => "required|digits:6",
+                ]);
+
+                $googleAuthenticator = new \PHPGangsta_GoogleAuthenticator();
+
+
+                if (!$googleAuthenticator->verifyCode($secretCode, $request->get("code"), 0)) {
+                    $errors = new \Illuminate\Support\MessageBag();
+                    $errors->add("code", "Invalid authentication code");
+                    return redirect()->back()->withErrors($errors);
+                }
+
+                session(["2fa_verified" => true]);
+                return redirect()->route('admin.user.getList');
+
+            } else {
+                return redirect()->route('admin.user.getList');
+            }
+        } else {
+            $errors = new \Illuminate\Support\MessageBag();
+            $errors->add("error", "Invalid username or password");
+            return redirect()->back()->withErrors($errors);
         }
     }
     public function getLogout()

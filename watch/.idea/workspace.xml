@@ -2,7 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ade599e5-bc6b-49a1-8cdd-4b1edcb2c235" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/app/Http/Controllers/SocialAuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/config/shopping_cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/public/user/js/myscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/resources/views/user/pages/blankcheckout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/resources/views/user/pages/cart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../watch - Copy/resources/views/user/pages/userlogin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TwoFaceAuthsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/VerifyTwoFaceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TwoFaceVerify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_20_091013_add_secret_code_to_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/enable2fa.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/.idea/watch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/.idea/watch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/resources/views/user/blocks/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/resources/views/user/blocks/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/resources/views/user/pages/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/resources/views/user/pages/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../watch - Copy/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../watch - Copy/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +172,7 @@
       <path value="$PROJECT_DIR$/vendor/darryldecode/cart" />
       <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/phpgangsta/googleauthenticator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Z1Wy71XapAnpDIZn32QFSfmTOM" />
@@ -152,15 +190,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/user/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/user" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\watch\resources\views\admin\user" />
       <recent name="C:\xampp\htdocs\watch\resources\views\user\pages" />
       <recent name="C:\xampp\htdocs\watch\vendor\gloudemans\shoppingcart" />
       <recent name="C:\xampp\htdocs\watch\resources\views\admin\cate" />
       <recent name="C:\xampp\htdocs\watch\resources\views\admin\product" />
-      <recent name="C:\xampp\htdocs\watch\public\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,6 +268,13 @@
       <workItem from="1593344040129" duration="5000" />
       <workItem from="1593353692512" duration="334000" />
       <workItem from="1593355042090" duration="219000" />
+      <workItem from="1593512131624" duration="650000" />
+      <workItem from="1595218278327" duration="662000" />
+      <workItem from="1595224150166" duration="364000" />
+      <workItem from="1595229513521" duration="132000" />
+      <workItem from="1595235390920" duration="9616000" />
+      <workItem from="1595734100430" duration="611000" />
+      <workItem from="1596851619929" duration="5148000" />
     </task>
     <servers />
   </component>
@@ -252,21 +297,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="988" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1589245966182" />
-    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1593512165145">
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1596851623277">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1593512165145" />
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1596851623277" />
     <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589250940593">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1589250940593" />
-    <state x="809" y="200" key="run.anything.popup" timestamp="1586264954551">
+    <state x="425" y="197" key="run.anything.popup" timestamp="1596853328165">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="809" y="200" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1586264954551" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1586264991352">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1586264991352" />
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1596853328165" />
   </component>
 </project>

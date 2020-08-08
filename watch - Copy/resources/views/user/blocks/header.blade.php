@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col">
                     <div class="header_content d-flex flex-row align-items-center justify-content-start">
-                        <div class="logo"><a href="#">Sublime.</a></div>
+                        <div class="logo"><a href="{!! url('/') !!}">Sublime.</a></div>
                         <nav class="main_nav">
                             <ul>
                                 <li><a href="{!! url('/') !!}">Home</a></li>
@@ -25,11 +25,16 @@
                                 @endforeach
 
                                 <li><a href="{!! route('getContact') !!}">Contact</a></li>
+                                @if(Auth::check())
+                                    <li><a href="{!! URL('userLogout') !!}">{!! Auth::user()->username !!} (Logout)</a></li>
+                                @else
+                                <li><a href="{!! URL('/auth/facebook') !!}">Login</a></li>
+                                @endif
                             </ul>
                         </nav>
                         <div class="header_extra ml-auto">
                             <div class="shopping_cart">
-                                <a href="cart.html">
+                                <a href="{!! route('getCart') !!}">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -40,7 +45,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
                                             </g>
 										</svg>
-                                    <div>Cart <span>(0)</span></div>
+                                    <div>Cart</div>
                                 </a>
                             </div>
                             <div class="search">

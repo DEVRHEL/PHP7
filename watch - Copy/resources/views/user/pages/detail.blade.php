@@ -45,15 +45,15 @@
                         <!-- Product Quantity -->
                         @if($stock->order > 0)
                         <div class="product_quantity_container">
-                            <div class="product_quantity clearfix">
-                                <span>Qty</span>
-                                <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
-                                <div class="quantity_buttons">
-                                    <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-                                    <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                            <div class="button cart_button"><a href="#">Add to cart</a></div>
+{{--                            <div class="product_quantity clearfix">--}}
+{{--                                <span>Qty</span>--}}
+{{--                                <input id="quantity_input" type="text" pattern="[0-9]*" value="1">--}}
+{{--                                <div class="quantity_buttons">--}}
+{{--                                    <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>--}}
+{{--                                    <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+                            <div class="button cart_button"><a href="{!! url('buy',['id'=>$product->id,'nameproduct'=>$product->alias]) !!}">Add to cart</a></div>
                         </div>
                         @endif
                         <!-- Share -->

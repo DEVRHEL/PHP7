@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use Darryldecode\Cart\Cart;
 use Illuminate\Http\Request;
 use DB,Mail;
+//use Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class HomeController extends Controller
@@ -55,5 +58,52 @@ class HomeController extends Controller
             $msg->to('ruthietrumbauer77@gmail.com','Admin')->subject('Customer Contact');
         });
         return redirect()->route('getContact')->with(['flash_message'=>'Thank you ^^ Send message successfully']);
+    }
+    public function getBuy($id)
+    {
+        $product_buy = DB::table('products')->where('id',$id)->first();
+        \Cart::add(array('id'=>$id,'name'=>$product_buy->name,'quantity'=>1,'price'=>$product_buy->price,'attributes'=>array('img'=>$product_buy->image)));
+        return redirect()->route('getCart');
+    }
+    public function getCart()
+    {
+        if(Auth::check())
+        {
+            $content = \Cart::getContent();
+            return view('user.pages.cart',compact('content'));
+        }
+        else
+        {
+            return redirect()->route('authfb');
+        }
+    }
+    public function deleteCart($id)
+    {
+        \Cart::remove($id);
+        return redirect()->route('getCart');
+    }
+    public function updateCart()
+    {
+        if (\Request::ajax())
+        {
+            $id = \Request::get('id');
+            $qty = \Request::get('qty');
+            \Cart::update($id, array('quantity'=>$qty));
+            echo "OK";
+        }
+    }
+    public function clearCart()
+    {
+        \Cart::clear();
+        return redirect()->route('getCart');
+    }
+    public function postCheckout(Request $request)
+    {
+        $data=['user'=>$request->user,'email'=>$request->email,'phonenumber'=>$request->phonenumber,'cartval'=>$request->cartval];
+        Mail::send('user.pages.blankcheckout',$data,function ($msg){
+            $msg->from('ruthietrumbauer77@gmail.com','Customer');
+            $msg->to('ruthietrumbauer77@gmail.com','Admin')->subject('Customer Order');
+        });
+        return redirect()->route('getContact')->with(['flash_message'=>'Thank you ^^ Order successfully']);
     }
 }

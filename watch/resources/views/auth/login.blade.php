@@ -35,6 +35,15 @@
                 </div>
             </div>
         </div>
+{{--        input 2FA code - start--}}
+        <div class="control-group">
+             <div class="controls">
+                 <div class="main_input_box">
+                     <span class="add-on bg_ly"><i class="icon-lock"></i></span><input type="text" name="code" placeholder="2FA Code" />
+                 </div>
+             </div>
+        </div>
+{{--        input 2FA code - end--}}
         <div class="form-actions">
             <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">Lost password?</a></span>
             <span class="pull-right"><input type="submit" class="btn btn-success" value="Login" /></span>
